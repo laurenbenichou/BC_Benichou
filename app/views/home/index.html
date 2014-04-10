@@ -1,0 +1,27 @@
+<div class="page-header">
+  <div class="row">
+    <div class="col-xs-6 col-sm-10 col-md-10 col-lg-10">
+      <h1>Bitcoin</h1>
+      <small>In Canadian Dollars and in Euro</small>
+    </div>
+    <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2" id="spinner-box">
+      <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div class="main">
+      <div ng-controller="HomeCtrl">
+        <h1>CAD: {{rates.cad}}</h1>
+        <h1>EUR: {{rates.eur}}</h1>
+        <h3>Last Updated: {{rates.time}}</h3>
+      </div>
+    </div>
+  </div>
+</div>
